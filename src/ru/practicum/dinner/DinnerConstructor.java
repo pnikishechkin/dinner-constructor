@@ -29,7 +29,7 @@ public class DinnerConstructor {
      */
     public void checkAndAddType(String type) {
         if (!checkType(type)) {
-            dishes.put(type, new ArrayList<String>());
+            dishes.put(type, new ArrayList<>());
         }
     }
 
@@ -69,8 +69,8 @@ public class DinnerConstructor {
 
         ArrayList<ArrayList<String>> res = new ArrayList<>();
         Random rand = new Random();
-        int index = 0;
-        ArrayList<String> combination = new ArrayList<>();
+        int index;
+        ArrayList<String> combination;
 
         // Генерация комбинаций блюд
         for (int i = 0; i < countCombinations; i++) {
